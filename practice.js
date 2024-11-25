@@ -113,3 +113,17 @@ console.log(person[cityName]);
 
 //-----------------------------------------------------------------------------
 
+//9. Template String
+const Number = [10,20,25,30,40,50,7];
+const Student = {
+    name: 'Rahat',
+    age: 25,
+    salary: 25000,
+    movie: ['Salar','Shiba','KGF','No One']
+}
+const About = `My name is ${Student.name}. I am ${Student.age} old. My current Salary is ${Student.salary} Taka. My Favourite Movie is ${Student.movie[2]}. My Lucky Number is ${Number[6]}`;
+
+console.log(About);
+
+//-----------------------------------------------------------------------------
+
