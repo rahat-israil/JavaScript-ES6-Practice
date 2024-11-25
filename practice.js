@@ -39,3 +39,24 @@ if (num1 === 30 || student1 || value1 === 50) {
 } else {
     console.log('This code is Incorrect')
 }
+
+//5. Array Declare
+const number = [10, 20, 30, 40, 50];
+console.log(number[1])
+number[1]= 100;
+console.log(number)
+// Length
+console.log(number.length);
+// Push
+number.push(60);
+console.log(number);
+number.push(70);
+console.log(number);
+//Pop
+number.pop();
+console.log(number)
+
+
+
+
+
