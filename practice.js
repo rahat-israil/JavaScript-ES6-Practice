@@ -29,3 +29,13 @@ if (num === 25 && student && value === 40) {
     console.log('This Code is Incorrect')
 }
 
+//4. || Operator
+let num1 = 40;
+let student1 = true;
+let value1 = 60;
+
+if (num1 === 30 || student1 || value1 === 50) {
+    console.log('This code is Correct');
+} else {
+    console.log('This code is Incorrect')
+}
