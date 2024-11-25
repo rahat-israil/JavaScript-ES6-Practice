@@ -11,11 +11,21 @@ console.log(age)
 let a = 10;
 let b = 15;
 
-console.log(a>b);
-console.log(a>=b);
-console.log(a<b);
-console.log(a<=b);
-console.log(a===b);
-console.log(a!==b);
+console.log(a > b);
+console.log(a >= b);
+console.log(a < b);
+console.log(a <= b);
+console.log(a === b);
+console.log(a !== b);
 
+//3. && Operator
+let num = 25;
+let student = true;
+let value = 50;
+
+if (num === 25 && student && value === 40) {
+    console.log('This Code is Correct');
+} else {
+    console.log('This Code is Incorrect')
+}
 
