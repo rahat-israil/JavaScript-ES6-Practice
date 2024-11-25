@@ -7,6 +7,8 @@ const age = 20;
 //age = 30;  // Not Working Show Error
 console.log(age)
 
+//-----------------------------------------------------------------------------
+
 //2. Six Basic Condition
 let a = 10;
 let b = 15;
@@ -17,6 +19,8 @@ console.log(a < b);
 console.log(a <= b);
 console.log(a === b);
 console.log(a !== b);
+
+//-----------------------------------------------------------------------------
 
 //3. && Operator
 let num = 25;
@@ -29,6 +33,8 @@ if (num === 25 && student && value === 40) {
     console.log('This Code is Incorrect')
 }
 
+//-----------------------------------------------------------------------------
+
 //4. || Operator
 let num1 = 50;
 let student1 = true;
@@ -39,6 +45,8 @@ if (num1 === 30 || student1 || value1 === 50) {
 } else {
     console.log('This code is Incorrect')
 }
+
+//-----------------------------------------------------------------------------
 
 //5. Array Declare
 const number = [10, 20, 30, 40, 50];
@@ -56,7 +64,9 @@ console.log(number);
 number.pop();
 console.log(number);
 
-// for Loop
+//-----------------------------------------------------------------------------
+
+//6. for Loop
 for (let i = 1; i <= 5; i++) {
     console.log(i);
 }
@@ -66,19 +76,40 @@ for (let i = 0; i < fruits.length; i++) {
     console.log(fruits[i]);
 }
 
-for(let i=1; i<=5; i++){
+for (let i = 1; i <= 5; i++) {
     console.log('*'.repeat(i));
 }
 
-// Function
-function Multiple(num1, num2){
-    Multi = num1*num2;
+//-----------------------------------------------------------------------------
+
+//7. Function
+function Multiple(num1, num2) {
+    const Multi = num1 * num2;
     return Multi;
 }
-const Output = Multiple(4,5);
+
+const Output = Multiple(4, 5);
 console.log(Output);
 
-function Name(name){
+function Name(name) {
     console.log('Hello ' + name);
 }
 Name('Rahat');
+
+//-----------------------------------------------------------------------------
+
+//8. Object
+const person ={
+    name: ' Rahat Bin Israil',
+    age: 23,
+    city: 'Dhaka'
+}
+console.log(person.name)
+console.log(person['age']);
+const City = person.city;
+console.log(City);
+const cityName = 'city';
+console.log(person[cityName]);
+
+//-----------------------------------------------------------------------------
+
