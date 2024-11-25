@@ -1,5 +1,5 @@
 //1. Simple Variable Declaration
-let myAge = 25;
+//  let myAge = 25;
 myAge = 50;
 console.log(myAge)
 
@@ -69,3 +69,16 @@ for (let i = 0; i < fruits.length; i++) {
 for(let i=1; i<=5; i++){
     console.log('*'.repeat(i));
 }
+
+// Function
+function Multiple(num1, num2){
+    Multi = num1*num2;
+    return Multi;
+}
+const Output = Multiple(4,5);
+console.log(Output);
+
+function Name(name){
+    console.log('Hello ' + name);
+}
+Name('Rahat');
