@@ -30,7 +30,7 @@ if (num === 25 && student && value === 40) {
 }
 
 //4. || Operator
-let num1 = 40;
+let num1 = 50;
 let student1 = true;
 let value1 = 60;
 
