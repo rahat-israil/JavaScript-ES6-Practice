@@ -1,0 +1,21 @@
+//1. Simple Variable Declaration
+let myAge = 25;
+myAge = 50;
+console.log(myAge)
+
+const age = 20;
+//age = 30;  // Not Working Show Error
+console.log(age)
+
+//2. Six Basic Condition
+let a = 10;
+let b = 15;
+
+console.log(a>b);
+console.log(a>=b);
+console.log(a<b);
+console.log(a<=b);
+console.log(a===b);
+console.log(a!==b);
+
+
