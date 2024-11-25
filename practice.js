@@ -43,7 +43,7 @@ if (num1 === 30 || student1 || value1 === 50) {
 //5. Array Declare
 const number = [10, 20, 30, 40, 50];
 console.log(number[1])
-number[1]= 100;
+number[1] = 100;
 console.log(number)
 // Length
 console.log(number.length);
@@ -54,9 +54,18 @@ number.push(70);
 console.log(number);
 //Pop
 number.pop();
-console.log(number)
+console.log(number);
 
+// for Loop
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
 
+const fruits = ['apple', 'banana', 'mango'];
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
 
-
-
+for(let i=1; i<=5; i++){
+    console.log('*'.repeat(i));
+}
