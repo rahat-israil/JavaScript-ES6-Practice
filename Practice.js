@@ -226,3 +226,4 @@ numbers1.forEach(num => {
     sum = sum + num;
 });
 console.log(sum);
+
