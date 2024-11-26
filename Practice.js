@@ -253,3 +253,20 @@ console.log(nameswithA);
 
 //----------------------------------------------------------------------------
 
+//16. Find
+const numbers3 = [2,4,6,7,8,9,10,11];
+const findFirstOddNumber = numbers3.find(num => num % 2 !== 0);
+console.log(findFirstOddNumber);
+
+const names1 = ["Ali", "Hasan", "Rahim", "Rita", "Sarah", "Rafiq"];
+
+const findName1 = names1.find(name => name.length > 4);
+console.log(findName1);
+
+const findNameWithR = names1.find(name => name.toUpperCase().startsWith('R'));
+console.log(findNameWithR);
+
+const nameWithR = names1.find(name => name.toUpperCase().includes('R'));
+console.log(nameWithR);
+
+//----------------------------------------------------------------------------
