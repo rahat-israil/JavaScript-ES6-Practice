@@ -145,7 +145,7 @@ console.log(Signin2);
 const multiple = (Age >= 18 && SignUp) ? 'Condition Fulfil' : 'Condition not Fulfil';
 console.log(multiple);
 
-//-----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
 
 //11. Arrow Function
 const getNumber = () => 55;
