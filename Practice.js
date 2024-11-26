@@ -297,3 +297,57 @@ const [firstMovie, secondMovie] = students?.movies;
 console.log(firstMovie,secondMovie);
 
 //----------------------------------------------------------------------------
+
+//18. Object Destructuring
+const person1 = {
+    name: "Ali",
+    ageOf: 25,
+    profession: "Developer"
+};
+const {name, ageOf,profession} = person1;
+console.log(`My profession is ${profession}, My name is ${name} & my age is ${ageOf} years.`);
+
+const unKnown = {
+    nameOf: 'unKnown',
+}
+const {nameOf,ageIs =30, Profession= 'Coder' } = unKnown;
+console.log(`My name is ${nameOf}, I am a ${Profession} & My age is ${ageIs} Years.`)
+
+// Nested Object Destructuring
+const person3 = {
+    name3: "Sarah",
+    contact: {
+        email: "sarah@example.com",
+        phone: "123-456-7890"
+    }
+};
+const {name3, contact:{email,phone}} = person3;
+console.log(`My name is ${name3}, My email is ${email} & My phone number is ${phone}.`);
+
+
+const employee = {
+    ide: 'VS Code',
+    designation: 'developer',
+    machine: 'mac',
+    languages: ['html', 'css', 'js'],
+    specification: {
+        height: 66,
+        weight: 67,
+        address: 'kumarkhali',
+        drink: 'water',
+        watch: {
+            color: 'black',
+            price: 500,
+            brand: 'garmin'
+        }
+    }
+}
+
+const {ide, designation,machine} = employee;
+console.log(`Using the ${ide}, My Designation is ${designation} & The Device is ${machine}.`);
+
+const {height, address, weight} = employee?.specification;
+console.log(`My address is ${address}, My Height is ${height} & My Weight is ${weight}.`);
+
+const {brand} = employee?.specification?.watch;
+console.log(`My watch brand is ${brand}.`);
