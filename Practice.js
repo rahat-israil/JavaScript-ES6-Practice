@@ -239,7 +239,7 @@ console.log(oddNumber);
 
 const names = ["Ali", "Hasan", "John", "Sarah", "Kate"]
 
-const nameLength = names.filter(name => name.length >4);
+const nameLength = names.filter(name => name.length > 4);
 console.log(nameLength);
 
 const findNameWithS = names.filter(name => name.toUpperCase().startsWith('S'));
@@ -254,7 +254,7 @@ console.log(nameswithA);
 //----------------------------------------------------------------------------
 
 //16. Find
-const numbers3 = [2,4,6,7,8,9,10,11];
+const numbers3 = [2, 4, 6, 7, 8, 9, 10, 11];
 const findFirstOddNumber = numbers3.find(num => num % 2 !== 0);
 console.log(findFirstOddNumber);
 
@@ -268,5 +268,32 @@ console.log(findNameWithR);
 
 const nameWithR = names1.find(name => name.toUpperCase().includes('R'));
 console.log(nameWithR);
+
+//----------------------------------------------------------------------------
+
+//17. Array Destructuring
+const array = [1, 2, 3, 4, 5];
+const [one, two, three, four, five] = array;
+console.log(one);
+console.log(four);
+console.log(two);
+console.log(five);
+console.log(three);
+
+const array1 = [1];
+const [first, second = 2, third = 3, fourth = 4] = array1;
+
+console.log(first);
+console.log(third);
+console.log(fourth);
+console.log(second);
+
+const students = {
+    name: 'Rahat',
+    age: 23,
+    movies: ['Salar', 'KGF', 'Money Height']
+}
+const [firstMovie, secondMovie] = students?.movies;
+console.log(firstMovie,secondMovie);
 
 //----------------------------------------------------------------------------
