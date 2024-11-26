@@ -195,9 +195,9 @@ const toLowerCase = arrs.map(arr => arr.toLowerCase());
 console.log(toLowerCase);
 
 const users = [
-    { name: "Alice", age: 25 },
-    { name: "Bob", age: 30 },
-    { name: "Charlie", age: 35 }
+    {name: "Alice", age: 25},
+    {name: "Bob", age: 30},
+    {name: "Charlie", age: 35}
 ]
 const findName = users.map(user => user.name);
 console.log(findName);
@@ -208,21 +208,48 @@ console.log(findAge);
 //-----------------------------------------------------------------------------
 
 //14. forEach
-const numbs = [1,2,3,4,5];
+const numbs = [1, 2, 3, 4, 5];
 numbs.forEach(num => {
     console.log(num);
 });
 
-const someFruits = ['Apple','Banana','Mango'];
+const someFruits = ['Apple', 'Banana', 'Mango'];
 someFruits.forEach((fruit, index) => {
     console.log(`The ${fruit} is at index no ${index}`);
 });
 
 // Calculate the sum of all numbers
-const numbers1 = [20,30,40,10];
+const numbers1 = [20, 30, 40, 10];
 let sum = 0;
 
 numbers1.forEach(num => {
     sum = sum + num;
 });
 console.log(sum);
+
+//----------------------------------------------------------------------------
+
+//15. Filter
+const numbers2 = [1, 2, 3, 4, 5];
+const evenNumber = numbers2.filter(num => num % 2 === 0);
+console.log(evenNumber);
+
+const oddNumber = numbers2.filter(num => num % 2 !== 0);
+console.log(oddNumber);
+
+const names = ["Ali", "Hasan", "John", "Sarah", "Kate"]
+
+const nameLength = names.filter(name => name.length >4);
+console.log(nameLength);
+
+const findNameWithS = names.filter(name => name.toUpperCase().startsWith('S'));
+console.log(findNameWithS);
+
+const nameWithH = names.filter(name => name.toUpperCase().endsWith('H'));
+console.log(nameWithH);
+
+const nameswithA = names.filter(name => name.toUpperCase().includes('A'));
+console.log(nameswithA);
+
+//----------------------------------------------------------------------------
+
