@@ -126,7 +126,7 @@ const About = `My name is ${Student.name}. I am ${Student.age} old. My current S
 
 console.log(About);
 
-//-----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
 
 //10. Ternary Operator
 let Age = 25;
